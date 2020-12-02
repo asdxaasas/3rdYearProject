@@ -1,6 +1,6 @@
 # Group Project
 ## Title: ECG-Gated High Frame Rate Echocardiography with Respiratory Motion Correction
-This group project was done by **collaboration between 9 group members** from engineering and medicine departments. The entire project involves ECG signal and Ultrasound image processing, and I was taking part in ECG signal processing part.
+This group project was done by **collaboration between 9 group members** from engineering and medicine departments. The entire project involves ECG signal and Ultrasound image processing, and I took part in ECG signal processing part.
 
 1. [Project Introduction](#intro)
 2. [Group Report](#thesis)
@@ -10,9 +10,11 @@ This group project was done by **collaboration between 9 group members** from en
 <a name="intro"></a>
 ## 1. Project Introduction
 
-The quantification of myocardial perfusion is an important measure in diagnosis cardiac disease, such as, coronary artery disease. Such measure is often computed by pixel wise substractions between consequtive imaging frames. This requires the same object remains at the same shape and coordinate in each frame. However, heart is like a pump which experiencing **non-rigid transformation** from time to time. Moreover, heart also has a **rigid translational motion** due to the mechanicm of breathing. Thus, the aim of the project is to remove two source of motions and hence improve myocardial perfusion quantification.
+The quantification of myocardial perfusion is an important measure in diagnosing cardiac disease, such as, coronary artery disease. Such measure is often computed by pixel wise substractions between consecutive imaging frames. This requires that the same object remains at the same shape and coordinate in each frame. However, the heart is like a pump which experiences **non-rigid transformation** from time to time. Moreover, the heart also has a **rigid translational motion** due to the breathing mechanism. Thus, the aim of the project was to remove two sources of motions and hence improve myocardial perfusion quantification.
 
-Although heart is similar to a pump that constantly dialates and contracts, heart do transmit us a signal "ECG" that inform us the instant of dilation or contraction. Therefore, we detect certain features of real-time ECG signals and then trigger ultrasound platform, so the frames are only taken when heart was in a particular shape, namely phase. Hence the **non-rigid transformation** was resolved by **ECG signals processing**. The **rigid translational motion** was removed by **image registration techniques**, where we translate the rigid object in different frames to a common coordinate. 
+consecutive
+
+Although the heart is similar to a pump that constantly dialates and contracts, the heart does transmit us a signal "ECG" that informs us on the instant of dilation or contraction. Therefore, we detect certain features of real-time ECG signals and then trigger ultrasound platform, so the frames were only taken when the heart was in a particular shape, more formally cardiac cycle phase 1. Hence the **non-rigid transformation** was resolved by **ECG signals processing**. The **rigid translational motion** was removed by **image registration techniques**, where we realigned the rigid object in all frames. 
 
 <a name="intro"></a>
 ## 2. Group Report
