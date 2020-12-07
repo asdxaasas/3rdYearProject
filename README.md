@@ -12,8 +12,6 @@ This group project was done by **collaboration between 9 group members** from en
 
 The quantification of myocardial perfusion is an important measure in diagnosing cardiac disease, such as, coronary artery disease. Such measure is often computed by pixel wise substractions between consecutive imaging frames. This requires that the same object remains at the same shape and coordinate in each frame. However, the heart is like a pump which experiences **non-rigid transformation** from time to time. Moreover, the heart also has a **rigid translational motion** due to the breathing mechanism. Thus, the aim of the project was to remove two sources of motions and hence improve myocardial perfusion quantification.
 
-consecutive
-
 Although the heart is similar to a pump that constantly dialates and contracts, the heart does transmit us a signal "ECG" that informs us on the instant of dilation or contraction. Therefore, we detect certain features of real-time ECG signals and then trigger ultrasound platform, so the frames were only taken when the heart was in a particular shape, more formally cardiac cycle phase 1. Hence the **non-rigid transformation** was resolved by **ECG signals processing**. The **rigid translational motion** was removed by **image registration techniques**, where we realigned the rigid object in all frames. 
 
 <a name="intro"></a>
